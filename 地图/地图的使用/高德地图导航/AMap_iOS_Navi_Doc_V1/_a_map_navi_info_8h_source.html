@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>高德地图 iOS 导航 SDK 参考手册 V1.3.1: AMapNaviInfo.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">高德地图 iOS 导航 SDK 参考手册 V1.3.1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_a_map_navi_info_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>属性</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">AMapNaviInfo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_a_map_navi_info_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  AMapNaviInfo.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  AMapNaviKit</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by 刘博 on 14-8-22.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2014年 AutoNavi. All rights reserved.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span><span class="preprocessor">#import &quot;<a class="code" href="_a_map_navi_common_obj_8h.html" title="定义了导航常量。 ">AMapNaviCommonObj.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html">   17</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_a_map_navi_info.html" title="导航过程中的导航信息。 ">AMapNaviInfo</a> : NSObject&lt;NSCopying,NSCoding&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#a4a176cec0bc899480c48ab37442f1695">   22</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) AMapNaviMode <a class="code" href="interface_a_map_navi_info.html#a4a176cec0bc899480c48ab37442f1695" title="导航信息更新类型。 ">naviMode</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#a3f7ab22da6d6745e981cd5b08a7b97f2">   27</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) AMapNaviIconType <a class="code" href="interface_a_map_navi_info.html#a3f7ab22da6d6745e981cd5b08a7b97f2" title="导航段转向图标类型。 ">iconType</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#a2c9e53925a61cb9a0595c982ccfaf2ff">   32</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger <a class="code" href="interface_a_map_navi_info.html#a2c9e53925a61cb9a0595c982ccfaf2ff" title="自车方向，单位度（正北为0，顺时针增加）。 ">carDirection</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#ac18031c781236eb8fb30744f2c751156">   37</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_a_map_navi_point.html" title="经纬度。 ">AMapNaviPoint</a> *<a class="code" href="interface_a_map_navi_info.html#ac18031c781236eb8fb30744f2c751156" title="自车经纬度。 ">carCoordinate</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#acc1e27ac37aba092a4da583c2678f02f">   42</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString *<a class="code" href="interface_a_map_navi_info.html#acc1e27ac37aba092a4da583c2678f02f" title="当前道路名称。 ">currentRoadName</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#a5bed57039eebde7adf9bd1b97e93210d">   47</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString *<a class="code" href="interface_a_map_navi_info.html#a5bed57039eebde7adf9bd1b97e93210d" title="下条道路名称。 ">nextRoadName</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#adf58971c84106406a092a7bd82db3305">   52</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger <a class="code" href="interface_a_map_navi_info.html#adf58971c84106406a092a7bd82db3305" title="离终点剩余距离，单位米。 ">routeRemainDistance</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#aa266207d5c7212933df192aaabb95e15">   57</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger <a class="code" href="interface_a_map_navi_info.html#aa266207d5c7212933df192aaabb95e15" title="离终点预估剩余时间，单位秒。 ">routeRemainTime</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#aa823a28ffd00e702f2befc368c2a7daf">   62</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger <a class="code" href="interface_a_map_navi_info.html#aa823a28ffd00e702f2befc368c2a7daf" title="当前路段剩余距离，单位米。 ">segmentRemainDistance</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#a0172ab24d280b37b274c6e54e3bf8c60">   67</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger <a class="code" href="interface_a_map_navi_info.html#a0172ab24d280b37b274c6e54e3bf8c60" title="当前路段预估剩余时间，单位秒。 ">segmentRemainTime</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#a3c66b821281b01cea86b60d293301276">   75</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger <a class="code" href="interface_a_map_navi_info.html#a3c66b821281b01cea86b60d293301276" title="以下导航信息仅在驾车导航时有效 ">cameraDistance</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#a6118ae3724f62e6d29e9398c8b9e92b9">   80</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger <a class="code" href="interface_a_map_navi_info.html#a6118ae3724f62e6d29e9398c8b9e92b9" title="电子眼类型（0为测速摄像头，1为监控摄像头），仅在驾车导航时有效。 ">cameraType</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#a0e7579dba3ebb71c5e3cade279faabfd">   85</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_a_map_navi_point.html" title="经纬度。 ">AMapNaviPoint</a> *<a class="code" href="interface_a_map_navi_info.html#a0e7579dba3ebb71c5e3cade279faabfd" title="电子眼经纬度，仅在驾车导航时有效。 ">cameraCoordinate</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#acdafc06596ccd61109fc565c8e835ecb">   90</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger <a class="code" href="interface_a_map_navi_info.html#acdafc06596ccd61109fc565c8e835ecb" title="电子眼限速（0为无限速信息），仅在驾车导航时有效。 ">cameraLimitSpeed</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="interface_a_map_navi_info.html#a22a81b6ce6ea983f7f25b00b5e19fea4">   95</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) NSInteger <a class="code" href="interface_a_map_navi_info.html#a22a81b6ce6ea983f7f25b00b5e19fea4" title="离服务站距离，单位米（-1为没有服务站），仅在驾车导航时有效。 ">serviceAreaDistance</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">@end</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+﻿&#169; 2014 高德软件有限公司 版权所有，保留所有权利。 

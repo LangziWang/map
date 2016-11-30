@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>高德地图 iOS 导航 SDK 参考手册 V1.3.1: AMapNaviViewController类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">高德地图 iOS 导航 SDK 参考手册 V1.3.1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('interface_a_map_navi_view_controller.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>属性</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Instance Methods</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="class_a_map_navi_view_controller-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">AMapNaviViewController类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>导航视图控制器。  
+ <a href="interface_a_map_navi_view_controller.html#details">更多...</a></p>
+
+<p><code>#import &lt;<a class="el" href="_a_map_navi_view_controller_8h_source.html">AMapNaviViewController.h</a>&gt;</code></p>
+<div class="dynheader">
+类 AMapNaviViewController 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_a_map_navi_view_controller.png" usemap="#AMapNaviViewController_map" alt=""/>
+  <map id="AMapNaviViewController_map" name="AMapNaviViewController_map">
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Instance Methods</h2></td></tr>
+<tr class="memitem:a6fedcc0f65a7b8cc25d07593d7eccb79"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_view_controller.html#a6fedcc0f65a7b8cc25d07593d7eccb79">initWithMapView:delegate:</a></td></tr>
+<tr class="memdesc:a6fedcc0f65a7b8cc25d07593d7eccb79"><td class="mdescLeft">&#160;</td><td class="mdescRight">AMapNaviViewController初始化方法，在传入mapView对象前，需要保存地图当前所有状态，导航SDK会重置mapView的所有状态。  <a href="#a6fedcc0f65a7b8cc25d07593d7eccb79">更多...</a><br/></td></tr>
+<tr class="separator:a6fedcc0f65a7b8cc25d07593d7eccb79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7511955a7f636a84ee934e3dd31f9a75"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_view_controller.html#a7511955a7f636a84ee934e3dd31f9a75">setCameraImage:</a></td></tr>
+<tr class="memdesc:a7511955a7f636a84ee934e3dd31f9a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置摄像头图标（只适用于驾车导航）。  <a href="#a7511955a7f636a84ee934e3dd31f9a75">更多...</a><br/></td></tr>
+<tr class="separator:a7511955a7f636a84ee934e3dd31f9a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7c5dcc662dc130b13e30001951eace1"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_view_controller.html#aa7c5dcc662dc130b13e30001951eace1">setStartPointImage:</a></td></tr>
+<tr class="memdesc:aa7c5dcc662dc130b13e30001951eace1"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置路径起点的自定义图标。  <a href="#aa7c5dcc662dc130b13e30001951eace1">更多...</a><br/></td></tr>
+<tr class="separator:aa7c5dcc662dc130b13e30001951eace1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe152bf8a759943faaf5ef0d54fde9ac"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_view_controller.html#afe152bf8a759943faaf5ef0d54fde9ac">setWayPointImage:</a></td></tr>
+<tr class="memdesc:afe152bf8a759943faaf5ef0d54fde9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置路径途经点的自定义图标。  <a href="#afe152bf8a759943faaf5ef0d54fde9ac">更多...</a><br/></td></tr>
+<tr class="separator:afe152bf8a759943faaf5ef0d54fde9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea2e000c3b1861ea8f87318668961f6e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_view_controller.html#aea2e000c3b1861ea8f87318668961f6e">setEndPointImage:</a></td></tr>
+<tr class="memdesc:aea2e000c3b1861ea8f87318668961f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置路径终点的自定义图标。  <a href="#aea2e000c3b1861ea8f87318668961f6e">更多...</a><br/></td></tr>
+<tr class="separator:aea2e000c3b1861ea8f87318668961f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a77f32009a81544c445b1b9ec10077da0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77f32009a81544c445b1b9ec10077da0"></a>
+id<br class="typebreak"/>
+&lt; <a class="el" href="protocol_a_map_navi_view_controller_delegate-p.html">AMapNaviViewControllerDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_view_controller.html#a77f32009a81544c445b1b9ec10077da0">delegate</a></td></tr>
+<tr class="memdesc:a77f32009a81544c445b1b9ec10077da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">AMapNaviViewControllerDelegate的代理。 <br/></td></tr>
+<tr class="separator:a77f32009a81544c445b1b9ec10077da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a9e4c18bfbc8991b5cf771a16a7824"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0a9e4c18bfbc8991b5cf771a16a7824"></a>
+AMapNaviViewShowMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_view_controller.html#af0a9e4c18bfbc8991b5cf771a16a7824">viewShowMode</a></td></tr>
+<tr class="memdesc:af0a9e4c18bfbc8991b5cf771a16a7824"><td class="mdescLeft">&#160;</td><td class="mdescRight">导航界面显示模式，默认AMapNaviViewShowModeMapNorthDirection。 <br/></td></tr>
+<tr class="separator:af0a9e4c18bfbc8991b5cf771a16a7824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f40dc48ffc49935cbd993688311ec5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f40dc48ffc49935cbd993688311ec5f"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_view_controller.html#a3f40dc48ffc49935cbd993688311ec5f">showUIElements</a></td></tr>
+<tr class="memdesc:a3f40dc48ffc49935cbd993688311ec5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示界面元素，默认YES。 <br/></td></tr>
+<tr class="separator:a3f40dc48ffc49935cbd993688311ec5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6033714316436183f148ce813832740"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6033714316436183f148ce813832740"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_view_controller.html#ad6033714316436183f148ce813832740">showCompass</a></td></tr>
+<tr class="memdesc:ad6033714316436183f148ce813832740"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示指南针，默认NO。 <br/></td></tr>
+<tr class="separator:ad6033714316436183f148ce813832740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3341aa7ce8caa2badc40e6ce8c561f27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3341aa7ce8caa2badc40e6ce8c561f27"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_view_controller.html#a3341aa7ce8caa2badc40e6ce8c561f27">showCamera</a></td></tr>
+<tr class="memdesc:a3341aa7ce8caa2badc40e6ce8c561f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示摄像头，默认YES（只适用于驾车导航）。 <br/></td></tr>
+<tr class="separator:a3341aa7ce8caa2badc40e6ce8c561f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5af4b64db1e0bde52b075d042df5b5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5af4b64db1e0bde52b075d042df5b5b"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_view_controller.html#ae5af4b64db1e0bde52b075d042df5b5b">showStandardNightType</a></td></tr>
+<tr class="memdesc:ae5af4b64db1e0bde52b075d042df5b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否黑夜模式，默认NO。 <br/></td></tr>
+<tr class="separator:ae5af4b64db1e0bde52b075d042df5b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca6ea09dfa5d7aa990b6bf31a97eef1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ca6ea09dfa5d7aa990b6bf31a97eef1"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_view_controller.html#a9ca6ea09dfa5d7aa990b6bf31a97eef1">showBrowseRouteButton</a></td></tr>
+<tr class="memdesc:a9ca6ea09dfa5d7aa990b6bf31a97eef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示全览按钮，默认YES。 <br/></td></tr>
+<tr class="separator:a9ca6ea09dfa5d7aa990b6bf31a97eef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b814890da214d144a17c64955d12c75"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b814890da214d144a17c64955d12c75"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_view_controller.html#a4b814890da214d144a17c64955d12c75">showMoreButton</a></td></tr>
+<tr class="memdesc:a4b814890da214d144a17c64955d12c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示更多按钮，默认YES。 <br/></td></tr>
+<tr class="separator:a4b814890da214d144a17c64955d12c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54ac8e0ff8a240e960b56e9dc331cd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae54ac8e0ff8a240e960b56e9dc331cd5"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_view_controller.html#ae54ac8e0ff8a240e960b56e9dc331cd5">showTrafficBar</a></td></tr>
+<tr class="memdesc:ae54ac8e0ff8a240e960b56e9dc331cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示路况光柱，默认YES。只适用于驾车导航。 <br/></td></tr>
+<tr class="separator:ae54ac8e0ff8a240e960b56e9dc331cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df47055da6b472f5987c7e3f67e024e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7df47055da6b472f5987c7e3f67e024e"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_view_controller.html#a7df47055da6b472f5987c7e3f67e024e">showTrafficButton</a></td></tr>
+<tr class="memdesc:a7df47055da6b472f5987c7e3f67e024e"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示实时交通按钮，默认YES。 <br/></td></tr>
+<tr class="separator:a7df47055da6b472f5987c7e3f67e024e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a916f198694120127710cd0743d5b2c1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a916f198694120127710cd0743d5b2c1c"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_view_controller.html#a916f198694120127710cd0743d5b2c1c">showTrafficLayer</a></td></tr>
+<tr class="memdesc:a916f198694120127710cd0743d5b2c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示实时交通图层，默认NO。 <br/></td></tr>
+<tr class="separator:a916f198694120127710cd0743d5b2c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad706650238486240599aa919af773ec6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad706650238486240599aa919af773ec6"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_view_controller.html#ad706650238486240599aa919af773ec6">showTurnArrow</a></td></tr>
+<tr class="memdesc:ad706650238486240599aa919af773ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示转向箭头，默认YES。 <br/></td></tr>
+<tr class="separator:ad706650238486240599aa919af773ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>导航视图控制器。 </p>
+<p>需调用 <a class="el" href="interface_a_map_navi_manager.html" title="导航管理类。 ">AMapNaviManager</a> 的 <a class="el" href="interface_a_map_navi_manager.html#a293fee534948ee38be21517d791637fb" title="展示导视图控制器。 ">presentNaviViewController:animated: (AMapNaviManager)</a> 方法进行展示。 </p>
+</div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="a6fedcc0f65a7b8cc25d07593d7eccb79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (instancetype) initWithMapView: </td>
+          <td></td>
+          <td class="paramtype">(MAMapView *)&#160;</td>
+          <td class="paramname"><em>mapView</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">delegate:</td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_a_map_navi_view_controller_delegate-p.html">AMapNaviViewControllerDelegate</a> &gt;)&#160;</td>
+          <td class="paramname"><em>delegate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AMapNaviViewController初始化方法，在传入mapView对象前，需要保存地图当前所有状态，导航SDK会重置mapView的所有状态。 </p>
+<dl class="section note"><dt>注解</dt><dd>由于导航SDK会复用用户的MapView，所以在以下两种操作前需要保存地图当前所有状态，导航SDK会重置mapView的所有状态，操作包括：<br/>
+ 1.在初始化AMapNaviViewController前<br/>
+ 2.在通过AMapNaviManager去展示AMapNaviViewController前<br/>
+ 将被重置的地图状态包括:<br/>
+ 1.重置MapView的代理delegate；<br/>
+ 2.清除所有的标注Annotation和覆盖物Overlay；<br/>
+ 3.重置MapView的旋转角度RotationDegree和倾斜角度CameraDegree；<br/>
+ 4.重置MapView的比例尺，指南针，地图类型MapType和交通图层的显示状态；<br/>
+ 5.重置MapView的可视区域visibleMapRect；<br/>
+ 6.将MapView从其原来的视图层级中移除，并加入到AMapNaviViewController的view层级中；<br/>
+ </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mapView</td><td>MAMapView对象。 </td></tr>
+    <tr><td class="paramname">delegate</td><td>AMapNaviViewController的代理。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>AMapNaviViewController类对象id（当AMapNavi.bundle没有正确导入时，返回nil）。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7511955a7f636a84ee934e3dd31f9a75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setCameraImage: </td>
+          <td></td>
+          <td class="paramtype">(UIImage *)&#160;</td>
+          <td class="paramname"><em>cameraImage</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置摄像头图标（只适用于驾车导航）。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cameraImage</td><td>摄像头图标，设置nil为默认图标。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aea2e000c3b1861ea8f87318668961f6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setEndPointImage: </td>
+          <td></td>
+          <td class="paramtype">(UIImage *)&#160;</td>
+          <td class="paramname"><em>endPointImage</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置路径终点的自定义图标。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endPointImage</td><td>终点图标，设置nil为默认图标。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa7c5dcc662dc130b13e30001951eace1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setStartPointImage: </td>
+          <td></td>
+          <td class="paramtype">(UIImage *)&#160;</td>
+          <td class="paramname"><em>startPointImage</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置路径起点的自定义图标。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startPointImage</td><td>起点图标，设置nil为默认图标。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afe152bf8a759943faaf5ef0d54fde9ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setWayPointImage: </td>
+          <td></td>
+          <td class="paramtype">(UIImage *)&#160;</td>
+          <td class="paramname"><em>wayPointImage</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置路径途经点的自定义图标。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wayPointImage</td><td>途经点图标，设置nil为默认图标。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="_a_map_navi_view_controller_8h_source.html">AMapNaviViewController.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+﻿&#169; 2014 高德软件有限公司 版权所有，保留所有权利。 

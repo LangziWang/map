@@ -1,0 +1,670 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>高德地图 iOS 导航 SDK 参考手册 V1.3.1: AMapNaviManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">高德地图 iOS 导航 SDK 参考手册 V1.3.1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('interface_a_map_navi_manager.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>属性</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Instance Methods</a> &#124;
+<a href="#properties">属性</a> &#124;
+<a href="class_a_map_navi_manager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">AMapNaviManager类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>导航管理类。  
+ <a href="interface_a_map_navi_manager.html#details">更多...</a></p>
+
+<p><code>#import &lt;<a class="el" href="_a_map_navi_manager_8h_source.html">AMapNaviManager.h</a>&gt;</code></p>
+<div class="dynheader">
+类 AMapNaviManager 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="interface_a_map_navi_manager.png" usemap="#AMapNaviManager_map" alt=""/>
+  <map id="AMapNaviManager_map" name="AMapNaviManager_map">
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Instance Methods</h2></td></tr>
+<tr class="memitem:a293fee534948ee38be21517d791637fb"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a293fee534948ee38be21517d791637fb">presentNaviViewController:animated:</a></td></tr>
+<tr class="memdesc:a293fee534948ee38be21517d791637fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">展示导视图控制器。  <a href="#a293fee534948ee38be21517d791637fb">更多...</a><br/></td></tr>
+<tr class="separator:a293fee534948ee38be21517d791637fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30a6c8f5c5bbe82989b51d5c16be248"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#ab30a6c8f5c5bbe82989b51d5c16be248">dismissNaviViewControllerAnimated:</a></td></tr>
+<tr class="memdesc:ab30a6c8f5c5bbe82989b51d5c16be248"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消展示导航视图控制器  <a href="#ab30a6c8f5c5bbe82989b51d5c16be248">更多...</a><br/></td></tr>
+<tr class="separator:ab30a6c8f5c5bbe82989b51d5c16be248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a19c9382d8abf4a8e32ebaf677637f9"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a9a19c9382d8abf4a8e32ebaf677637f9">calculateDriveRouteWithEndPoints:wayPoints:drivingStrategy:</a></td></tr>
+<tr class="memdesc:a9a19c9382d8abf4a8e32ebaf677637f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">以下算路方法需要高德地图坐标  <a href="#a9a19c9382d8abf4a8e32ebaf677637f9">更多...</a><br/></td></tr>
+<tr class="separator:a9a19c9382d8abf4a8e32ebaf677637f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420b131412c07213f9dd57449fab4652"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a420b131412c07213f9dd57449fab4652">calculateDriveRouteWithStartPoints:endPoints:wayPoints:drivingStrategy:</a></td></tr>
+<tr class="memdesc:a420b131412c07213f9dd57449fab4652"><td class="mdescLeft">&#160;</td><td class="mdescRight">带起点的驾车路径计算。  <a href="#a420b131412c07213f9dd57449fab4652">更多...</a><br/></td></tr>
+<tr class="separator:a420b131412c07213f9dd57449fab4652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1021760c39ef202c43e55cb585184c72"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a1021760c39ef202c43e55cb585184c72">recalculateDriveRouteWithDrivingStrategy:</a></td></tr>
+<tr class="memdesc:a1021760c39ef202c43e55cb585184c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">导航过程中重新规划路线(起点为当前位置，途经点、终点位置不变，只适用于驾车导航)。  <a href="#a1021760c39ef202c43e55cb585184c72">更多...</a><br/></td></tr>
+<tr class="separator:a1021760c39ef202c43e55cb585184c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a2fec30bac914dc673acbe46c59bcb"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a89a2fec30bac914dc673acbe46c59bcb">calculateWalkRouteWithEndPoints:</a></td></tr>
+<tr class="memdesc:a89a2fec30bac914dc673acbe46c59bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">不带起点的步行路径计算。  <a href="#a89a2fec30bac914dc673acbe46c59bcb">更多...</a><br/></td></tr>
+<tr class="separator:a89a2fec30bac914dc673acbe46c59bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7667e3071c3e547d6773dce8aa487c59"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a7667e3071c3e547d6773dce8aa487c59">calculateWalkRouteWithStartPoints:endPoints:</a></td></tr>
+<tr class="memdesc:a7667e3071c3e547d6773dce8aa487c59"><td class="mdescLeft">&#160;</td><td class="mdescRight">带起点的步行路径计算。  <a href="#a7667e3071c3e547d6773dce8aa487c59">更多...</a><br/></td></tr>
+<tr class="separator:a7667e3071c3e547d6773dce8aa487c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec476b0523dacb8afed1eafe76d142f"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a3ec476b0523dacb8afed1eafe76d142f">recalculateWalkRoute</a></td></tr>
+<tr class="memdesc:a3ec476b0523dacb8afed1eafe76d142f"><td class="mdescLeft">&#160;</td><td class="mdescRight">导航过程中重新规划路线(起点为当前位置，终点位置不变，只适用于步行导航)。  <a href="#a3ec476b0523dacb8afed1eafe76d142f">更多...</a><br/></td></tr>
+<tr class="separator:a3ec476b0523dacb8afed1eafe76d142f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a165d652a64aeca673cc8feadf409e835"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a165d652a64aeca673cc8feadf409e835">getNaviGuideList</a></td></tr>
+<tr class="memdesc:a165d652a64aeca673cc8feadf409e835"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取导航路线的路线详情列表。  <a href="#a165d652a64aeca673cc8feadf409e835">更多...</a><br/></td></tr>
+<tr class="separator:a165d652a64aeca673cc8feadf409e835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b406bdce159984966a2f7f7ee8d1c2b"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a4b406bdce159984966a2f7f7ee8d1c2b">setEmulatorNaviSpeed:</a></td></tr>
+<tr class="memdesc:a4b406bdce159984966a2f7f7ee8d1c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置模拟导航的速度，默认60。  <a href="#a4b406bdce159984966a2f7f7ee8d1c2b">更多...</a><br/></td></tr>
+<tr class="separator:a4b406bdce159984966a2f7f7ee8d1c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e72c6adfc56ed5e7f5ee8e6361faccb"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a0e72c6adfc56ed5e7f5ee8e6361faccb">startEmulatorNavi</a></td></tr>
+<tr class="memdesc:a0e72c6adfc56ed5e7f5ee8e6361faccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始模拟导航。  <a href="#a0e72c6adfc56ed5e7f5ee8e6361faccb">更多...</a><br/></td></tr>
+<tr class="separator:a0e72c6adfc56ed5e7f5ee8e6361faccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e593c478dbf72610bbb9d1c449fe81b"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a9e593c478dbf72610bbb9d1c449fe81b">startGPSNavi</a></td></tr>
+<tr class="memdesc:a9e593c478dbf72610bbb9d1c449fe81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">开始实时导航。  <a href="#a9e593c478dbf72610bbb9d1c449fe81b">更多...</a><br/></td></tr>
+<tr class="separator:a9e593c478dbf72610bbb9d1c449fe81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd50a33b83cb3b9fd75c8e3a30e5e569"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd50a33b83cb3b9fd75c8e3a30e5e569"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#afd50a33b83cb3b9fd75c8e3a30e5e569">stopNavi</a></td></tr>
+<tr class="memdesc:afd50a33b83cb3b9fd75c8e3a30e5e569"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止导航，包含实时导航和模拟导航。 <br/></td></tr>
+<tr class="separator:afd50a33b83cb3b9fd75c8e3a30e5e569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f3739e552b4cdb11f53683c438d21be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f3739e552b4cdb11f53683c438d21be"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a9f3739e552b4cdb11f53683c438d21be">pauseNavi</a></td></tr>
+<tr class="memdesc:a9f3739e552b4cdb11f53683c438d21be"><td class="mdescLeft">&#160;</td><td class="mdescRight">暂停导航，包含实时导航和模拟导航。 <br/></td></tr>
+<tr class="separator:a9f3739e552b4cdb11f53683c438d21be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac82dd1f664e947b73a4379bf0b3798"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abac82dd1f664e947b73a4379bf0b3798"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#abac82dd1f664e947b73a4379bf0b3798">resumeNavi</a></td></tr>
+<tr class="memdesc:abac82dd1f664e947b73a4379bf0b3798"><td class="mdescLeft">&#160;</td><td class="mdescRight">继续导航，包含实时导航和模拟导航。 <br/></td></tr>
+<tr class="separator:abac82dd1f664e947b73a4379bf0b3798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b1f0e84fe38e0c7d85210e91b29d86"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a01b1f0e84fe38e0c7d85210e91b29d86">setTimeForOneWord:</a></td></tr>
+<tr class="memdesc:a01b1f0e84fe38e0c7d85210e91b29d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置TTS语音播报每播报一个字需要的时间。 根据播报一个字的时间和运行的速度，可以更改语音播报的触发时机。。  <a href="#a01b1f0e84fe38e0c7d85210e91b29d86">更多...</a><br/></td></tr>
+<tr class="separator:a01b1f0e84fe38e0c7d85210e91b29d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a8aeacb986b7858ede8c957eaa3dd2"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a12a8aeacb986b7858ede8c957eaa3dd2">readNaviInfoManual</a></td></tr>
+<tr class="memdesc:a12a8aeacb986b7858ede8c957eaa3dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">触发一次导航播报信息。  <a href="#a12a8aeacb986b7858ede8c957eaa3dd2">更多...</a><br/></td></tr>
+<tr class="separator:a12a8aeacb986b7858ede8c957eaa3dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6e078db9e352b0d90bbf6353916c70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e6e078db9e352b0d90bbf6353916c70"></a>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#a7e6e078db9e352b0d90bbf6353916c70">refreshTrafficStatusesManual</a></td></tr>
+<tr class="memdesc:a7e6e078db9e352b0d90bbf6353916c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">手动刷新路况信息，调用后会刷新路况光柱（仅在驾车导航模式下有效，SDK每四分钟自动刷新一次，但限制两次刷新的最小时间间隔为一分钟）。 <br/></td></tr>
+<tr class="separator:a7e6e078db9e352b0d90bbf6353916c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb4b0205393046699b70979a16c3833e"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_a_map_navi_manager.html#abb4b0205393046699b70979a16c3833e">getTrafficStatusesWithStartPosition:distance:</a></td></tr>
+<tr class="memdesc:abb4b0205393046699b70979a16c3833e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取某一范围内的路况光柱信息，仅在驾车导航模式下有效。  <a href="#abb4b0205393046699b70979a16c3833e">更多...</a><br/></td></tr>
+<tr class="separator:abb4b0205393046699b70979a16c3833e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+属性</h2></td></tr>
+<tr class="memitem:a6f40b4809f97ce6aeb5eac6bd90fd429"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f40b4809f97ce6aeb5eac6bd90fd429"></a>
+id&lt; <a class="el" href="protocol_a_map_navi_manager_delegate-p.html">AMapNaviManagerDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_manager.html#a6f40b4809f97ce6aeb5eac6bd90fd429">delegate</a></td></tr>
+<tr class="memdesc:a6f40b4809f97ce6aeb5eac6bd90fd429"><td class="mdescLeft">&#160;</td><td class="mdescRight">AMapNaviManager的代理。 <br/></td></tr>
+<tr class="separator:a6f40b4809f97ce6aeb5eac6bd90fd429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3832fa28d1e9aa0d410732280204159"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3832fa28d1e9aa0d410732280204159"></a>
+<a class="el" href="interface_a_map_navi_route.html">AMapNaviRoute</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_manager.html#aa3832fa28d1e9aa0d410732280204159">naviRoute</a></td></tr>
+<tr class="memdesc:aa3832fa28d1e9aa0d410732280204159"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前导航路径的信息。 <br/></td></tr>
+<tr class="separator:aa3832fa28d1e9aa0d410732280204159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808509d2d3b47726954b2214dcadacf2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a808509d2d3b47726954b2214dcadacf2"></a>
+AMapNaviMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_manager.html#a808509d2d3b47726954b2214dcadacf2">naviMode</a></td></tr>
+<tr class="memdesc:a808509d2d3b47726954b2214dcadacf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前导航模式。 <br/></td></tr>
+<tr class="separator:a808509d2d3b47726954b2214dcadacf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d65f004f1f47194456050e16ee130cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d65f004f1f47194456050e16ee130cc"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_manager.html#a2d65f004f1f47194456050e16ee130cc">updateCameraInfo</a></td></tr>
+<tr class="memdesc:a2d65f004f1f47194456050e16ee130cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否播报摄像头信息，默认YES（只适用于驾车导航）。 <br/></td></tr>
+<tr class="separator:a2d65f004f1f47194456050e16ee130cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade5cd4e76ad878801365dc77febbb7a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade5cd4e76ad878801365dc77febbb7a6"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_manager.html#ade5cd4e76ad878801365dc77febbb7a6">isRecalculateRouteForYaw</a></td></tr>
+<tr class="memdesc:ade5cd4e76ad878801365dc77febbb7a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">偏航时是否重新计算路径，默认YES（计算路径需要联网）。 <br/></td></tr>
+<tr class="separator:ade5cd4e76ad878801365dc77febbb7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9290d81104dd1f1dcb528972ebcc70b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9290d81104dd1f1dcb528972ebcc70b3"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_manager.html#a9290d81104dd1f1dcb528972ebcc70b3">screenAlwaysBright</a></td></tr>
+<tr class="memdesc:a9290d81104dd1f1dcb528972ebcc70b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否在导航过程中让屏幕常亮，默认YES。 <br/></td></tr>
+<tr class="separator:a9290d81104dd1f1dcb528972ebcc70b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0635d5b86562e8b24a0dd41c8a04552"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0635d5b86562e8b24a0dd41c8a04552"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_manager.html#aa0635d5b86562e8b24a0dd41c8a04552">updateTrafficInfo</a></td></tr>
+<tr class="memdesc:aa0635d5b86562e8b24a0dd41c8a04552"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否播报交通信息，默认YES（只适用于驾车导航，需要联网）。 <br/></td></tr>
+<tr class="separator:aa0635d5b86562e8b24a0dd41c8a04552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49754088a838d97c1152db52634f63e7"><td class="memItemLeft" align="right" valign="top">AMapNaviDetectedMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_a_map_navi_manager.html#a49754088a838d97c1152db52634f63e7">detectedMode</a></td></tr>
+<tr class="memdesc:a49754088a838d97c1152db52634f63e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">探测模式，默认为AMapDetecteModeNone（需要联网）。  <a href="#a49754088a838d97c1152db52634f63e7">更多...</a><br/></td></tr>
+<tr class="separator:a49754088a838d97c1152db52634f63e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>导航管理类。 </p>
+</div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="a9a19c9382d8abf4a8e32ebaf677637f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) calculateDriveRouteWithEndPoints: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>endPoints</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">wayPoints:</td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>wayPoints</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">drivingStrategy:</td>
+          <td></td>
+          <td class="paramtype">(AMapNaviDrivingStrategy)&#160;</td>
+          <td class="paramname"><em>strategy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>以下算路方法需要高德地图坐标 </p>
+<p>不带起点的驾车路径计算 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endPoints</td><td>终点坐标。支持多个终点，终点列表的尾点为实际导航终点，其他坐标点为辅助信息，带有方向性，可有效避免算路到马路的另一侧。 </td></tr>
+    <tr><td class="paramname">wayPoints</td><td>途经点坐标序列，同时支持最多3个途经点的路径规划。 </td></tr>
+    <tr><td class="paramname">strategy</td><td>驾车路径的计算策略。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>路径是否计算成功。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a420b131412c07213f9dd57449fab4652"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) calculateDriveRouteWithStartPoints: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>startPoints</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">endPoints:</td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>endPoints</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">wayPoints:</td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>wayPoints</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">drivingStrategy:</td>
+          <td></td>
+          <td class="paramtype">(AMapNaviDrivingStrategy)&#160;</td>
+          <td class="paramname"><em>strategy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>带起点的驾车路径计算。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startPoints</td><td>起点坐标。支持多个起点，起点列表的尾点为实际导航起点，其他坐标点为辅助信息，带有方向性，可有效避免算路到马路的另一侧。 </td></tr>
+    <tr><td class="paramname">endPoints</td><td>终点坐标。支持多个终点，终点列表的尾点为实际导航终点，其他坐标点为辅助信息，带有方向性，可有效避免算路到马路的另一侧。 </td></tr>
+    <tr><td class="paramname">wayPoints</td><td>途经点坐标序列，同时支持最多3个途经点的路径规划。 </td></tr>
+    <tr><td class="paramname">strategy</td><td>驾车路径的计算策略。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>路径是否计算成功。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a89a2fec30bac914dc673acbe46c59bcb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) calculateWalkRouteWithEndPoints: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>endPoints</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>不带起点的步行路径计算。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endPoints</td><td>终点坐标。支持多个终点，终点列表的尾点为实际导航终点，其他坐标点为辅助信息，带有方向性，可有效避免算路到马路的另一侧。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>路径是否计算成功。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7667e3071c3e547d6773dce8aa487c59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) calculateWalkRouteWithStartPoints: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>startPoints</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">endPoints:</td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>endPoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>带起点的步行路径计算。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startPoints</td><td>起点坐标。支持多个起点，起点列表的尾点为实际导航起点，其他坐标点为辅助信息，带有方向性，可有效避免算路到马路的另一侧。 </td></tr>
+    <tr><td class="paramname">endPoints</td><td>终点坐标。支持多个终点，终点列表的尾点为实际导航终点，其他坐标点为辅助信息，带有方向性，可有效避免算路到马路的另一侧。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>路径是否计算成功。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab30a6c8f5c5bbe82989b51d5c16be248"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) dismissNaviViewControllerAnimated: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>animated</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>取消展示导航视图控制器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">animated</td><td>动画效果。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a165d652a64aeca673cc8feadf409e835"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSArray *) getNaviGuideList </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取导航路线的路线详情列表。 </p>
+<dl class="section return"><dt>返回</dt><dd>AMapNaviGuide数组，导航路线的路线详情列表。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abb4b0205393046699b70979a16c3833e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSArray *) getTrafficStatusesWithStartPosition: </td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>startPosition</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">distance:</td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>distance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取某一范围内的路况光柱信息，仅在驾车导航模式下有效。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startPosition</td><td>光柱范围在路径中的起始位置，取值范围[0, routeLength)。 </td></tr>
+    <tr><td class="paramname">distance</td><td>光柱范围的距离，startPosition + distance 和的取值范围(0, routelength]。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>AMapNaviTrafficStatus数组，该范围内路况信息数组，可用于绘制光柱。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a293fee534948ee38be21517d791637fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) presentNaviViewController: </td>
+          <td></td>
+          <td class="paramtype">(UIViewController *)&#160;</td>
+          <td class="paramname"><em>naviViewController</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">animated:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>animated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>展示导视图控制器。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">naviViewController</td><td>仅支持AMapNaviViewController实例和AMapNaviHUDViewController实例。如果要展示AMapNaviViewController，需要提前保存地图当前所有状态，导航SDK会重置mapView的所有状态。 </td></tr>
+    <tr><td class="paramname">animated</td><td>动画效果。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a12a8aeacb986b7858ede8c957eaa3dd2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) readNaviInfoManual </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>触发一次导航播报信息。 </p>
+<dl class="section return"><dt>返回</dt><dd>是否成功。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1021760c39ef202c43e55cb585184c72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) recalculateDriveRouteWithDrivingStrategy: </td>
+          <td></td>
+          <td class="paramtype">(AMapNaviDrivingStrategy)&#160;</td>
+          <td class="paramname"><em>strategy</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>导航过程中重新规划路线(起点为当前位置，途经点、终点位置不变，只适用于驾车导航)。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strategy</td><td>驾车路径的计算策略。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>路径是否计算成功。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3ec476b0523dacb8afed1eafe76d142f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) recalculateWalkRoute </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>导航过程中重新规划路线(起点为当前位置，终点位置不变，只适用于步行导航)。 </p>
+<dl class="section return"><dt>返回</dt><dd>路径是否计算成功。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4b406bdce159984966a2f7f7ee8d1c2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setEmulatorNaviSpeed: </td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>speed</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置模拟导航的速度，默认60。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>模拟导航的速度(范围:[10,120]; 单位:km/h)。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a01b1f0e84fe38e0c7d85210e91b29d86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setTimeForOneWord: </td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>time</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置TTS语音播报每播报一个字需要的时间。 根据播报一个字的时间和运行的速度，可以更改语音播报的触发时机。。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>每个字的播放时间(范围:[250,500]; 单位:毫秒)。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0e72c6adfc56ed5e7f5ee8e6361faccb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) startEmulatorNavi </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>开始模拟导航。 </p>
+<dl class="section return"><dt>返回</dt><dd>是否成功。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e593c478dbf72610bbb9d1c449fe81b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) startGPSNavi </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>开始实时导航。 </p>
+<dl class="section return"><dt>返回</dt><dd>是否成功。 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">属性说明</h2>
+<a class="anchor" id="a49754088a838d97c1152db52634f63e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (AMapNaviDetectedMode) detectedMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>探测模式，默认为AMapDetecteModeNone（需要联网）。 </p>
+<p>探测模式适用于不设置目的地的播报内容（包括：电子眼、特殊道路设施等等）提示。 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="_a_map_navi_manager_8h_source.html">AMapNaviManager.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+﻿&#169; 2014 高德软件有限公司 版权所有，保留所有权利。 
